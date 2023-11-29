@@ -1,1 +1,57 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fafafa;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    margin: 50px;
+}
+
+h1 {
+    color: #ffcc29;
+}
+
+.options {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.option {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    text-align: center;
+}
+
+.option img {
+    max-width: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.star-rating {
+    display: flex;
+    justify-content: center;
+}
+
+.star-rating:before {
+    content: "\2605"; /* Unicode character for a star */
+    font-size: 30px;
+    color: #ddd;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.star-rating[data-rating="1"]:before,
+.star-rating[data-rating="2"]:before,
+.star-rating[data-rating="3"]:before,
+.star-rating[data-rating="4"]:before,
+.star-rating[data-rating="5"]:before {
+    color: #ffcc29;
+}
 
